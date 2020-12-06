@@ -1,0 +1,21 @@
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #b31217 51%,
+    #e52d27 100%
+  );
+  color: white;
+  width: 8%;
+  padding:1rem;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-top: 1rem;
+  span{
+      margin-left: 0.5rem;
+  }
+}
+
+.btn:hover{
+    cursor: pointer;
+}

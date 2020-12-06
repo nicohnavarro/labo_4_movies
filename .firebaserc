@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "laboratorio-4-9d005": {
+      "hosting": {
+        "laboratorio4": [
+          "laboratorio-4-9d005"
+        ]
+      }
+    }
+  }
+}

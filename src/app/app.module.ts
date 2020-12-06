@@ -1,18 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './components/layout/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CountriesComponent } from './pages/countries/countries.component';
+import { ListCountriesComponent } from './components/country/list-countries/list-countries.component';
+import { MainComponent } from './pages/main/main.component';
+import { ActorsComponent } from './pages/actors/actors.component';
+import { ListActorsComponent } from './components/actor/list-actors/list-actors.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateActorComponent } from './components/actor/create-actor/create-actor.component';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FooterComponent,
+    HomeComponent,
+    CountriesComponent,
+    ListCountriesComponent,
+    MainComponent,
+    ActorsComponent,
+    ListActorsComponent,
+    CreateActorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
+    
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

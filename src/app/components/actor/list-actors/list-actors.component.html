@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card" *ngFor="let actor of listActors">
+        <div class="info">
+            <div class="image">
+                <img src="{{actor.photo}}" alt="">
+            </div>
+            <div class="content">
+                <span class="name">
+                    {{actor.name}}
+                </span>
+                <span class="name">
+                    {{actor.surname}}
+                </span>
+                <span class="gender">
+                    {{actor.gender}}
+                </span>
+            </div>
+            <div class="action">
+                <div class="details">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Details</span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <i class="fas fa-trash-alt"></i>
+        </div>
+    </div>
+</div>

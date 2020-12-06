@@ -1,0 +1,10 @@
+<div class="listado_paises">
+    <div class="item" *ngFor="let country of list_countries" (click)="selectedCountry(country)">
+        <div class="flag">
+            <img [src]=country.flag alt="">
+        </div>
+        <div class="name">
+            <span>{{country.name}}</span>
+        </div>
+    </div>
+</div>

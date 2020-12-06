@@ -1,0 +1,79 @@
+.createActor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  .listCountries {
+    width: 40%;
+    height: 80%;
+    h3 {
+      color: white;
+    }
+  }
+}
+
+form{
+  margin-top: 2rem;
+  .country{
+    color:white;
+  }
+  .form-group{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      .control-label{
+          color: red;
+      }
+      .form-control{
+          border-radius: 9px;
+          height: 30px;
+      }
+  }
+}
+
+.btn {
+    color: red;
+    width: 15%;
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+
+  }
+  
+  .btn:hover{
+      cursor: pointer;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+  .btn-grad {background-image: linear-gradient(to right, #200122 0%, #6f0000  51%, #200122  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px rgb(32, 32, 32);
+     border-radius: 10px;
+     display: block;
+   }
+
+   .red{
+    background-image: linear-gradient(to right, #b41515 0%, #6f0000  51%, #200122  100%)
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+   }
+  

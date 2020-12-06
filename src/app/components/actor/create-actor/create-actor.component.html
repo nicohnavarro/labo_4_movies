@@ -1,0 +1,42 @@
+<div class="btn">
+    <i class="fas fa-2x fa-arrow-left" (click)="backActors()"></i>
+</div>
+<div class="createActor">
+    <div class="formActor">
+        <div class="formAddActor">
+            <form [formGroup]="formActor" (validSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label class="control-label">Name:</label>
+                    <input type="text" class="form-control" formControlName="Name" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Surname:</label>
+                    <input type="text" class="form-control" formControlName="Surname" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <select class="form-control" formControlName="Gender">
+                        <option>Male</option>
+                        <option>Famale</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Date of Birth:</label>
+                    <input type="date" class="form-control" formControlName="DateOfBirth" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Nationality:</label>
+                    <input type="text" class="form-control country" disabled [value]=nacionality_name>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="listCountries">
+        <h3>Select Country</h3>
+        <app-countries (countryChoosen)="getCountrySelected($event)"></app-countries>
+    </div>
+</div>
+<div class="buttons">
+    <button class="btn-grad red" type="submit" (click)="onSubmit()">Submit</button>
+    <button class="btn-grad" type="button" (click)="onReset()">Reset</button>
+</div>
