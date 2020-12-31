@@ -11,6 +11,16 @@ export class ListActorsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  showActor(actor){
+    alert("show")
+  }
+
+  deleteActor(actor)
+  {
+    alert("delete")
   }
 
 }
