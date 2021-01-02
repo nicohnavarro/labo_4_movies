@@ -15,12 +15,12 @@ export class ListActorsComponent implements OnInit {
   }
 
   showActor(actor){
-    alert("show")
+    alert("show");
   }
 
   deleteActor(actor)
   {
-    alert("delete")
+    alert("delete");
   }
 
 }
