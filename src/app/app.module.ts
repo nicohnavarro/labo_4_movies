@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CreateActorComponent } from './components/actor/create-actor/create-actor.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { ListMoviesComponent } from './components/movie/list-movies/list-movies.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AngularFireModule } from '@angular/fire';
     MainComponent,
     ActorsComponent,
     ListActorsComponent,
-    CreateActorComponent
+    CreateActorComponent,
+    ListMoviesComponent
   ],
   imports: [
     BrowserModule,
