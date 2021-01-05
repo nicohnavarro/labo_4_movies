@@ -16,6 +16,7 @@ import { CreateActorComponent } from './components/actor/create-actor/create-act
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { ListMoviesComponent } from './components/movie/list-movies/list-movies.component';
+import { CreateMovieComponent } from './components/movie/create-movie/create-movie.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ListMoviesComponent } from './components/movie/list-movies/list-movies.
     ActorsComponent,
     ListActorsComponent,
     CreateActorComponent,
-    ListMoviesComponent
+    ListMoviesComponent,
+    CreateMovieComponent
   ],
   imports: [
     BrowserModule,
