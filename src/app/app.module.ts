@@ -17,6 +17,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { ListMoviesComponent } from './components/movie/list-movies/list-movies.component';
 import { CreateMovieComponent } from './components/movie/create-movie/create-movie.component';
+import { DetailsMovieComponent } from './components/movie/details-movie/details-movie.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CreateMovieComponent } from './components/movie/create-movie/create-mov
     ListActorsComponent,
     CreateActorComponent,
     ListMoviesComponent,
-    CreateMovieComponent
+    CreateMovieComponent,
+    DetailsMovieComponent
   ],
   imports: [
     BrowserModule,
